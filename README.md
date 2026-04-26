@@ -1,28 +1,24 @@
 # 🧠 DocuMind — AI Documentation Assistant
 
-<div align="center">
+> A RAG-powered chatbot that answers questions about LangChain using real documentation — not hallucinations.
 
-**A RAG-powered AI assistant that answers questions about LangChain documentation**
-
-[![Python](https://img.shields.io/badge/Python-3.11+-blue.svg)](https://www.python.org/downloads/)
-[![LangChain](https://img.shields.io/badge/LangChain-🦜🔗-green.svg)](https://langchain.com/)
+[![Python](https://img.shields.io/badge/Python-3.11+-blue.svg)](https://www.python.org/)
+[![LangChain](https://img.shields.io/badge/LangChain-🦜-green.svg)](https://langchain.com/)
 [![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B.svg)](https://streamlit.io/)
 [![Pinecone](https://img.shields.io/badge/Pinecone-🌲-orange.svg)](https://pinecone.io/)
 [![Gemini](https://img.shields.io/badge/Gemini-AI-blue.svg)](https://ai.google.dev/)
-[![Tavily](https://img.shields.io/badge/Tavily-🔍-purple.svg)](https://tavily.com/)
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-
-</div>
 
 ---
 
-## 🎯 What is DocuMind?
-
-DocuMind is an intelligent documentation chatbot built on a **RAG (Retrieval-Augmented Generation)** pipeline. Instead of relying on an LLM's general training data, DocuMind crawls real LangChain documentation, stores it in a vector database, and retrieves the most relevant chunks before generating an answer.
-
-This means answers are grounded in actual documentation — not hallucinated.
+![DocuMind UI](static/banner.png)
 
 ---
+
+## What it does
+
+User asks a question → DocuMind searches real LangChain docs → Gemini generates a precise, cited answer.
+
+No guessing. No hallucinations. Every answer is grounded in actual documentation.
 
 ## ✨ Features
 
@@ -143,27 +139,6 @@ documind-rag-assistant/
 
 ---
 
-## 💡 What I Learned Building This
-
-- How RAG pipelines work end-to-end — from crawling to vector storage to generation
-- Why chunking strategy matters — too large = poor retrieval, too small = lost context
-- How to use LangGraph's `create_react_agent` to build tool-calling AI agents
-- How to swap LLM providers (OpenAI → Gemini) using the OpenAI-compatible API format
-- How vector similarity search works in Pinecone and why cosine similarity is used
-- How prompt engineering directly affects answer quality and hallucination rates
-
----
-
-## 🔮 Future Improvements
-
-- [ ] Add support for multiple documentation sources (LangGraph, LangSmith)
-- [ ] Implement conversation memory for multi-turn context
-- [ ] Add a re-ranking step to improve retrieval precision
-- [ ] Deploy to Streamlit Cloud for public access
-- [ ] Add user feedback buttons (thumbs up/down) to track answer quality
-
----
-
 ## ⚙️ Environment Variables
 
 | Variable | Description |
@@ -180,7 +155,3 @@ documind-rag-assistant/
 MIT License — see [LICENSE](LICENSE) for details.
 
 ---
-
-<div align="center">
-Built by <a href="https://github.com/HuzaifaAmir1">Huzaifa Amir</a>
-</div>
