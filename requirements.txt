@@ -1,0 +1,15 @@
+langchain
+langchain-openai
+langchain-pinecone
+langchain-community
+langchain-google-genai
+langchain-tavily
+langchain-text-splitters
+langgraph
+streamlit
+pinecone
+openai
+tavily-python
+python-dotenv
+tiktoken
+google-generativeai
